@@ -69,6 +69,11 @@ public class GameManager : MonoBehaviour
         wantedImage = WantedStartObject;
         faceImage = FaceStartObject;
 
+        if (level > 3)
+        {
+            Succes();
+        }
+
         if (id != 0)
         {
             wantedImage.ChangeSprite(id, imagesWanted[id]);
